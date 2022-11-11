@@ -5,127 +5,28 @@
 	<title>Registration Form</title>
 	<meta charset="utf-8">
 	<style>
-		input[type=text],
-		select {
-			width: 100%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			display: inline-block;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
+		li{
+			list-style-type: none;
 		}
-
-		input[type=submit] {
-			width: 100%;
-			background-color: #4CAF50;
-			color: white;
-			padding: 14px 20px;
-			margin: 8px 0;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-		}
-
-		input[type=submit]:hover {
-			background-color: #45a049;
-		}
-
-		div {
-			border-radius: 5px;
-			background-color: #f2f2f2;
-			padding: 20px;
-		}
-	</style>
+		</style>
 </head>
 
 <body>
-	<h1>Student Registration Form - HTML Form Example</h1>
-	<div>
-		<form method="post" action="">
-			<fieldset>
-				<legend>Personal Information</legend>
-				<label for="firstName">First Name:</label>
-				<input type="text" name="firstName" id="firstName" placeholder="Enter your first name"
-					title="First Name" />
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./register.html" target="_blank">Register</a></li> |
+				<li><a href="./cv.html" target="_blank">CV</a></li> |
+				<li><a href="./calculator.html">Calculator</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
 
-				<label for="lastName">Last Name:</label>
-				<input type="text" name="lastName" id="lastName" placeholder="Enter your last name" title="Last Name" />
-				<br><br>
-				<label for="gender">Gender:</label>
-				Male:<input type="radio" name="gender" value="male" />
-				Female:<input type="radio" name="gender" value="female" />
-				<br>
-				<br><label for="dob">Date of Birth:</label>
-				<input type="date" name="dob" id="dob">
-				<br>
-				<br><label for="hairColor">Hair Color</label>
-				<input type="color" name="hairColor" id="hairColor">
-				<br>
-				<br>
-				<label for="phoneNumber">Phone Number</label>
-				<input type="tel" id="phoneNumber" name="phoneNumber" />
-				<br><br>
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" />
-				<br><br>
+	</main>
+	<footer>
 
-				<label>Picture:</label>
-				<input type="file" accept="jpg" />
-
-			</fieldset>
-			<fieldset>
-				<legend>
-					User Registration
-				</legend>
-				<label for="password">Password:</label>
-				<input type="password" name="password" id="password" placeholder="Enter a password" title="Password" />
-
-				<label for="confirmPassword">Confirm Password:</label>
-				<input type="Password" name="confirmPassword" id="confirmPassword" placeholder="Enter password again"
-					title="Confirm Password" />
-
-			</fieldset>
-			<fieldset>
-				<legend>
-					Course Details
-				</legend>
-				<label for="coursesCount">Number of Courses Taken</label>
-				<input type="number" min="1" id="coursesCount" name="coursesCount" />
-				<br>
-				<br><br>
-				<label for="suggestedClassTime">Suggested Class Time</label>
-				<input type="time" id="suggestedClassTime" name="suggestedClassTime" />
-				<br>
-				<label for="experienceLevel">Experience Level (Novice, Intermediate, Expert
-					)</label>
-				<input type="range" min="1" max="3" id="experienceLevel" name="experienceLevel" />
-
-				<br>
-			</fieldset>
-
-			<fieldset>
-				<legend>Contact Information</legend><label for="webAddress">Enter Your
-					Website Address</label>
-				<input type="url" name="hairColor" id="hairColor">
-				<br>
-				<br><label for="language">Languages:</label>
-				<br>
-				Urdu:<input type="checkbox" name="language" value="Urdu">
-				English:<input type="checkbox" name="language" value="English">
-				Punjabi:<input type="checkbox" name="language" value="Punjabi">
-
-				<br><br>
-				<label for="address">Address:</label><br>
-				<textarea rows="5" cols="40" name="address" id="address" placeholder="Enter
-						your complete address" title="Address">
-					</textarea>
-			</fieldset>
-			<br><br>
-			<button type="submit">Register</button>
-			<button type="reset">Reset</button>
-		</form>
-	</div>
+	</footer>
 </body>
 
 </html>
